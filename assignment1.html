@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let attendance = Number(prompt("enter the user attendance days"));
+
+        let attendance_percentage = attendance * 100 / 120;
+        
+        if (attendance_percentage >= 70) {
+            let dues = prompt("all the dues are cleared?");
+            if (dues == "yes") { 
+                let assignment_submitted = prompt("is assignment submitted on time?");
+                
+                if (assignment_submitted == "yes") {
+                    let is_reached_on_time = prompt("is reached on time in exam?");
+                      
+                    if (is_reached_on_time == "yes") {
+                        alert("you can appear in exam");
+                    } else {
+                        alert("you can't appear in exam");
+                    }
+                } else {
+                    alert("students are not allowed to appear in exam");
+                }
+            } else {
+                alert("you are not allowed to appear in exam");
+            }
+        } else {
+            alert("you are not allowed to appear in exam");
+        }
+    </script>
+</body>
+</html>
